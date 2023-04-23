@@ -10,12 +10,14 @@ const images = [
     alt: "logo_abajo",
     width: 377,
     height: 93,
+    className: "w-[20rem] h-[100px]",
   },
   {
     image: "/images/connect.svg",
     alt: "connect",
     width: 550,
     height: 100,
+    className: "w-[30rem] h-[100px]",
   },
   {
     image: "/images/vector_1.svg",
@@ -87,7 +89,7 @@ export default function Home({ deviceType }: { deviceType: string }) {
       </div>
       <div className="linear-gradient-3 flex flex-col justify-center">
         <h2 className="text-center py-4 text-xl">OUR PROFESIONAL SERVICES</h2>
-        <div className="flex px-7 pt-1 gap-8">
+        <div className="flex px-7 pt-1 gap-8 flex-wrap lg:flex-nowrap">
           {cards.map(({ description, image, subTitle, title, link }) => (
             <Card
               key={image}
@@ -100,15 +102,17 @@ export default function Home({ deviceType }: { deviceType: string }) {
           ))}
         </div>
       </div>
-      <div className="flex w-full justify-between items-center p-3 pb-8 pt-8">
-        {images.slice(0, 2).map(({ alt, height, image, width }) => (
-          <Image
-            alt={alt}
-            height={height}
-            src={image}
-            width={width}
-            key={image}
-          />
+      <div className="flex w-ful justify-center items-center lg:justify-between lg:items-end flex-wrap lg:flex-nowrap  p-3 pb-8 pt-8">
+        {images.slice(0, 2).map(({ alt, height, image, width, className }) => (
+          <div key={image}>
+            <Image
+              alt={alt}
+              height={0}
+              className={className}
+              src={image}
+              width={0}
+            />
+          </div>
         ))}
         <div className="flex gap-2">
           {images.slice(2).map(({ alt, height, image, width }) => (
