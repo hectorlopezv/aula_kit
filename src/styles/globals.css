@@ -18,10 +18,63 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+}
+.react-multi-carousel-dot button {
+  background: #458cc0 !important;
+}
+
+.react-multi-carousel-dot--active button {
+  border-color: #ffffff !important;
+  background: #ffffff !important;
+  border-width: 2px !important;
+}
+
+.linear-gradient {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    0deg,
+    #ffffff 0%,
+    #d4edfb 8.02%,
+    #9bd4f5 20.02%,
+    #6dc0f1 31.12%,
+    #4cb2ee 40.94%,
+    #38a9ec 49.11%,
+    #31a6eb 54.63%,
+    #33a7eb 70.13%,
+    #3aaaec 76.62%,
+    #47afed 81.41%,
+    #58b7ef 85.4%,
+    #6fc1f1 88.85%,
+    #8bcdf4 91.95%,
+    #addcf7 94.78%,
+    #d3ecfb 97.34%,
+    #fefeff 99.71%,
+    #ffffff 99.77%
+  );
+}
+.linear-gradient-2 {
+  background: linear-gradient(
+    0deg,
+    #31a6eb 0%,
+    #33a7eb 34.34%,
+    #3aaaec 48.7%,
+    #47afed 59.34%,
+    #58b7ef 68.15%,
+    #6fc1f1 75.81%,
+    #8bcdf4 82.68%,
+    #addcf7 88.96%,
+    #d3ecfb 94.61%,
+    #fefeff 99.87%,
+    #ffffff 100%
+  );
+}
+
+.linear-gradient-3 {
+  background: linear-gradient(
+    180deg,
+    #31a6eb 14.81%,
+    rgba(120, 197, 242, 0.7584) 40.54%,
+    rgba(192, 228, 249, 0.49) 69.12%,
+    rgba(238, 247, 253, 0.2969) 89.68%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
 }
